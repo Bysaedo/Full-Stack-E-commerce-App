@@ -78,6 +78,9 @@ function ProductDetail({ addToCart }) {
               "https://placehold.co/600x400/e0e0e0/666?text=No+Image"
             }
             alt={product.name}
+            onError={(e) => {
+              e.target.src = "https://placehold.co/300x200?text=No+Image";
+            }}
           />
           {hasDiscount && <span className="sale-badge-large">SALE</span>}
         </div>

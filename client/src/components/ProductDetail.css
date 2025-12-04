@@ -77,3 +77,15 @@
     transform: translateY(0);
   }
 }
+
+.product-detail-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-detail-info {
+  color: black;
+}

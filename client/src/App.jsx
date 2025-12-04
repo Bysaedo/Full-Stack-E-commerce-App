@@ -145,7 +145,7 @@ function App() {
         </main>
 
         <footer className="app-footer">
-          <p>&copy; 2024 Blogbox Store. Built with React & ASP.NET Core</p>
+          <p>&copy; 2025 Blogbox Store. Built with React & ASP.NET Core</p>
         </footer>
 
         {showCart && (

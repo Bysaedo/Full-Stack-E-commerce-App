@@ -17,6 +17,7 @@ function ProductList() {
         setLoading(true);
         const data = await searchProducts(activeSearch);
         setProducts(data);
+        console.log("Loaded products:", data);
         setError(null);
       } catch (err) {
         setError("Failed to load products. Please try again later.");

@@ -12,11 +12,11 @@ function ProductCard({ product }) {
     >
       <div className="product-image">
         <img
-          src={
-            product.imageUrl ||
-            "https://via.placeholder.com/300x200?text=No+Image"
-          }
+          src={product.imageUrl || "https://placehold.co/300x200?text=No+Image"}
           alt={product.name}
+          onError={(e) => {
+            e.target.src = "https://placehold.co/300x200?text=No+Image";
+          }}
         />
         {hasDiscount && <span className="sale-badge">SALE</span>}
       </div>
